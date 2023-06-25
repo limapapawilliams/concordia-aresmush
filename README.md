@@ -1,6 +1,6 @@
 ![Build Status](https://travis-ci.org/AresMUSH/aresmush.svg?branch=master)
 
-Branched Code for [Concordia MU](concordiamu.aresmush.com) Roleplay Game
+Branched Code for [Concordia MU](https://concordiamu.aresmush.com) Roleplay Game
 
 Code in a steady state for Alpha with several plugins added:
 
