@@ -1,5 +1,16 @@
 ![Build Status](https://travis-ci.org/AresMUSH/aresmush.svg?branch=master)
 
+Branched Code for [Concordia MU](concordiamu.aresmush.com) Roleplay Game
+
+Code in a steady state for Alpha with several plugins added:
+
+[Compliments](https://github.com/spiritlake/ares-compliments-plugin)
+[Cookies](https://github.com/AresMUSH/ares-cookies-plugin)
+[Dice](https://github.com/aresmush/ares-dice-plugin)
+[PostEvent](https://github.com/spiritlake/ares-postevent-plugin)
+[RandomScene](https://github.com/spiritlake/ares-randomscene-plugin)
+[Weather](https://github.com/aresmush/ares-weather-plugin)
+
 AresMUSH
 ========
 
