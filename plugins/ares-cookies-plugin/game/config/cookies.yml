@@ -1,0 +1,37 @@
+---
+cookies:
+  cookie_award_cron:
+    day_of_week:
+    - Fri
+    hour:
+    - 22
+    minute:
+    - 0
+  cookie_category: Cookie Awards
+  shortcuts:
+    cookies: cookie
+  achievements:
+    cookie_given:
+      type: community
+      message: Gave %{count} cookies.
+      levels:
+      - 1
+      - 10
+      - 25
+      - 50
+      - 100
+      - 200
+      - 500
+      - 1000
+    cookie_received:
+      type: community
+      message: Received %{count} cookies.
+      levels:
+      - 1
+      - 10
+      - 25
+      - 50
+      - 100
+      - 200
+      - 500
+      - 1000
