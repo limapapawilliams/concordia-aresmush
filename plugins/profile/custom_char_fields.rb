@@ -13,8 +13,10 @@ module AresMUSH
       # @example
       #    return { goals: Website.format_markdown_for_html(char.goals) }
       def self.get_fields_for_viewing(char, viewer)
-        return {}
-      end
+        return { renown_gained: Renown.build_web_renown_data(char, viewer),
+          gained_total: Renown.prettify(Renown.calculate_gained(char.name)), goals: Website.format_markdown_for_html(char.goals) }
+		end
+
     
       # Gets custom fields for the character profile editor.
       #
@@ -26,8 +28,8 @@ module AresMUSH
       # @example
       #    return { goals: Website.format_input_for_html(char.goals) }
       def self.get_fields_for_editing(char, viewer)
-        return {}
-      end
+       return { goals: Website.format_input_for_html(char.goals) }
+       end
 
       # Gets custom fields for character creation (chargen).
       #
@@ -38,9 +40,10 @@ module AresMUSH
       # @example
       #    return { goals: Website.format_input_for_html(char.goals) }
       def self.get_fields_for_chargen(char)
-        return {}
+         return { }
       end
-      
+   
+	
       # Saves fields from profile editing.
       #
       # @param [Character] char - The character being updated.
@@ -52,7 +55,7 @@ module AresMUSH
       #        char.update(goals: Website.format_input_for_mush(char_data[:custom][:goals]))
       #        return []
       def self.save_fields_from_profile_edit(char, char_data)
-        return []
+        return [char.update(goals: Website.format_input_for_mush(char_data[:custom][:goals]))]
       end
       
       # Saves fields from character creation (chargen).
@@ -68,7 +71,6 @@ module AresMUSH
       def self.save_fields_from_chargen(char, chargen_data)
         return []
       end
-      
-    end
-  end
+	end
+end
 end
